@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CampusConnect</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="medai.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -21,8 +22,15 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
 <div class="btn">
-    <p class="signup-link">Welcome back student!</p>
+    <p class="signup-link">Welcome back guest!</p>
     <button class="login-btn"><a href="index.html">Sign Out</a></button>
+
+</div>
+
+   <div class="nav-toggle" id="navToggle" aria-label="Open navigation">
+    <span></span>
+    <span></span>
+    <span></span>
 </div>
     </nav>
 <!-- nav bar end here -->
@@ -119,75 +127,108 @@
 <!-- gallery section ends here -->
 <!-- feedback section starts here -->
    <section class="feedback-section" id="feedback">
-        <div class="feedback-container">
-            <div class="feedback-header">
-                <h2>Share Your Feedback</h2>
-                <p>We value your opinion! Please take a moment to let us know about your experience with CampusConnect.</p>
-            </div>
-            
-            <form class="feedback-form" id="feedbackForm">
-                <div class="form-group">
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="category">Feedback Category</label>
-                    <select id="category" name="category" required>
-                        <option value="" disabled selected>Select a category</option>
-                        <option value="general">General Feedback</option>
-                        <option value="technical">Technical Issue</option>
-                        <option value="suggestion">Suggestion</option>
-                        <option value="event">Event Feedback</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-                
-                <div class="form-group rating-group">
-                    <label>How would you rate your experience?</label>
-                    <div class="rating-options">
-                        <div class="rating-option">
-                            <input type="radio" id="rating-1" name="rating" value="1">
-                            <label for="rating-1">1</label>
-                        </div>
-                        <div class="rating-option">
-                            <input type="radio" id="rating-2" name="rating" value="2">
-                            <label for="rating-2">2</label>
-                        </div>
-                        <div class="rating-option">
-                            <input type="radio" id="rating-3" name="rating" value="3">
-                            <label for="rating-3">3</label>
-                        </div>
-                        <div class="rating-option">
-                            <input type="radio" id="rating-4" name="rating" value="4">
-                            <label for="rating-4">4</label>
-                        </div>
-                        <div class="rating-option">
-                            <input type="radio" id="rating-5" name="rating" value="5">
-                            <label for="rating-5">5</label>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="form-group">
-                    <label for="message">Your Feedback</label>
-                    <textarea id="message" name="message" placeholder="Please share your thoughts, suggestions, or concerns..." required></textarea>
-                </div>
-                
-                <div class="feedback-submit">
-                    <button type="submit">Submit Feedback</button>
-                </div>
-            </form>
-            
-          
+ <div class="feedback-header">
+     <h2>What Our Students Say</h2>
+    <p class="about-p">Hear from our students about their experiences and how Campus Connect has enriched their university life.</p>
+ </div>
+  
+    <div class="feedback-cards">
+        <div class="testimonial">
+      <div class="feedback">
+        "CampusConnect was an amazing experience, I learned so much and made great connections. I am very grateful to this prestigious university."
+      </div>
+      <div class="header">
+        <div class="left">
+            <img src="./images/Ellipse 1.png" alt="">
         </div>
-    </section>
+      <div class="author">
+        <div class="name">Precious Ubani</div>
+      <div class="role">Creative Designer</div>
+      </div>
+      </div>
+    </div>
 
+     <div class="testimonial">
+      <div class="feedback">
+        "Experience with Campus Connect has been like a roller coaster
+ride but it was a journey worth taking. I have got opportunities
+ to challenge    myself and put my skills to test which i am more 
+than thankful for. "
+      </div>
+      <div class="header">
+        <div class="left">
+            <img src="./images/Ellipse 2.png" alt="">
+        </div>
+      <div class="author">
+        <div class="name">Rapha Ibiang</div>
+      <div class="role">MobileApp Developer</div>
+      </div>
+      </div>
+    </div>
+
+     <div class="testimonial">
+      <div class="feedback">
+        "The “Engineering  journey at Campus Connect university has been  amazing. i have been placed at Amazon through the on-campus recruitment by  Campus Connect.”"
+      </div>
+      <div class="header">
+        <div class="left">
+            <img src="./images/Ellipse 3.png" alt="">
+        </div>
+      <div class="author">
+        <div class="name">Rachael Ariyo</div>
+      <div class="role">Software Developer</div>
+      </div>
+      </div>
+  
+  </div>
+        </div>
+
+    </section>
+<!-- feedback section ends here -->
+
+<!-- resistration section -->
+ <div class="container" id="contact">
+    <form>
+      <h2>Contact Us / Registration</h2>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email">
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone">
+
+      <label for="college">College</label>
+      <input type="text" id="college" name="college">
+
+      <label for="id">ID</label>
+      <input type="text" id="id" name="id">
+
+      <div class="checkbox-group">
+      <div class="top">  
+        <label>Events interested in:</label>
+    </div>
+       <div class="bottom">
+         <label><input type="checkbox" name="event" value="workshop"> Workshop</label>
+        <label><input type="checkbox" name="event" value="competition"> Competition</label>
+        <label><input type="checkbox" name="event" value="keynote"> Keynote Talks</label>
+       </div>
+      </div>
+
+      <button type="submit" class="register-btn">Register</button>
+    </form>
+
+    <div class="qr-section">
+      <img src="./images/qrcode_damilee2010.github.io.png" alt="QR Code">
+      <p>Scan the QR code to get your tickets</p>
+    </div>
+  </div>
+</body>
+</html>
+
+
+ <!-- registration section ends here -->
     <footer>
         <div class="footer-container">
             <div class="footer-col">

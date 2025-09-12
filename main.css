@@ -902,3 +902,172 @@ form.login p.signup-link a{
         .footer-bottom-links a:hover {
             color: #0066ff;
         }
+
+        /* guest page styles */
+
+section.feedback-section {
+    height: auto;
+    width: 100%;
+    padding: 80px 0;
+    background: #f9fafc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.feedback-header{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.feedback-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px; 
+}
+section.feedback-section h2.header{
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+section.feedback-section .about-p{
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 40px;
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto 40px;
+}
+section.feedback-section .testimonial {
+    max-width: 400px;
+        height: auto;
+    text-align: center;
+    border: 1px solid #0066ff;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    background: #fafdff;
+    box-shadow: 0 4px 24px rgba(0,102,255,0.07), 0 1.5px 6px rgba(0,0,0,0.04);
+    padding: 10px 8px 10px 8px;
+    transition: box-shadow 0.2s, border-color 0.2s;
+}
+section.feedback-section .testimonial:hover {
+    box-shadow: 0 8px 32px rgba(0,102,255,0.13), 0 2px 8px rgba(0,0,0,0.07);
+    border-color: #0056e6;
+}
+
+section.feedback-section .testimonial p {
+    font-size: 13px;
+    color: #333;
+    margin-bottom: 20px;
+    padding: 20px;
+    line-height: 1.6;
+}
+section.feedback-section .testimonial .feedback{
+     font-size: 15px;
+     background-color: transparent;
+}
+section.feedback-section .testimonial .header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+section.feedback-section .testimonial img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #0066ff;
+}
+
+section.feedback-section .testimonial .author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 6px;
+     font-size: 15px;
+    margin-bottom: 8px;
+}
+
+section.feedback-section .testimonial .author .name {
+    font-weight: 600;
+     font-size: 17px;
+    color: #333;
+}
+/* feedback section styles ends here */
+
+.container {
+      display: flex;
+      justify-content: space-between;
+      max-width: 900px;
+      margin: auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    form {
+      flex: 1;
+      margin-right: 40px;
+    }
+    h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .checkbox-group {
+      margin-top: 15px;
+    }
+    .checkbox-group .bottom{
+        display: flex;
+        gap: 30px;
+    }
+    .checkbox-group label {
+      font-weight: normal;
+      display: block;
+      margin-bottom: 5px;
+    }
+    .register-btn {
+      margin-top: 20px;
+background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .qr-section {
+      text-align: center;
+      border: 1px solid #333;
+      padding: 10px;
+      width: 230px;
+      margin-top: 80px;
+      border-radius: 20px;
+      height: 230px;
+    }
+    .qr-section img {
+      width: 150px;
+      height: 150px;
+    }
+    .qr-section p {
+      margin-top: 10px;
+      font-weight: bold;
+    }
