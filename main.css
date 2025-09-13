@@ -178,7 +178,7 @@ form.login label{
     display: block;
 }
 
-form.login  input{
+form.login  input, .input{
     width: 100%;
     padding: 10px;
     font-size: 16px;
@@ -244,7 +244,7 @@ form.login .forgot-password:hover {
 form.login .submit-btn{
     width: 100%;
     padding: 10px;
-    font-size: 16px;
+    font-size: 18px;
     background-color: #0066ff;
     color: white;
     border: none;
@@ -252,6 +252,7 @@ form.login .submit-btn{
     cursor: pointer;
     margin-top: 10px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 form.login .submit-btn a{
